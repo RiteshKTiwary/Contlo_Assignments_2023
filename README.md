@@ -16,5 +16,5 @@ When duplicating a feature and retraining the model, the new weights are likely 
 
 Sources used:
 
-Hastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction. Springer Science & Business Media.
-Bishop, C. M. (2006). Pattern Recognition and Machine Learning. Springer.
+1. Hastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction. Springer Science & Business Media.
+2. Bishop, C. M. (2006). Pattern Recognition and Machine Learning. Springer.
