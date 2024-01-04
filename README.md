@@ -1,4 +1,4 @@
-#Some Briefs about this Repo
+# Some Briefs about this Repo
 Two types:
 1. Q/A which consists of 5 questions and its answers
 2. Coding where I am implementing and optimizing GPT-2 Model
