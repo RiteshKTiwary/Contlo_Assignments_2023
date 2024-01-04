@@ -5,7 +5,7 @@ Two types:
 
 # Q/A:
 
-I have attached a file **qa_assignment.md** for where I answered those 5 questions mentioned in Assignment proposed by Contlo on 
+I have attached a file **qa_assignment.md** for where I answered those 5 questions mentioned in 
 https://contlo.notion.site/contlo/Assignment-32610c8f37dd4435b1f97ecaff93bdaf
 
 # Coding to Implement GPT-2:
