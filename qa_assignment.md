@@ -1,5 +1,5 @@
 # Q/A Assignment
-Q1. You train Logistic Regression with a certain set of features and learn weights $w_0$, $w_1$ till $w_n$.
+**Q1.** You train Logistic Regression with a certain set of features and learn weights $w_0$, $w_1$ till $w_n$.
 Feature $n$ gets weight $w_n$ at the end of training. Say you now create a new dataset where you duplicate feature $n$ into feature $(n+1)$ and retrain a new model. Suppose this new model weights are $w_{new_0}$, $w_{new_1}$ till $w_{new_n}$, $w_{new_{n+1}}$. What is the likely relationship between $w_{new_0}$, $w_{new_1}$ , $w_{new_n}$,  and $w_{new_{n+1}}$?
 
 Answer:
@@ -14,7 +14,7 @@ Sources used:
 1. Hastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction. Springer Science & Business Media.
 2. Bishop, C. M. (2006). Pattern Recognition and Machine Learning. Springer.
 
-Q2. You currently have an email marketing template A and you want to replace it with a better template. A is the control_template. You also test email templates B, C, D, E. You send exactly 1000 emails of each template to different random users. You wish to figure out what email gets the highest click through rate. Template A gets 10% click through rate (CTR), B gets 7% CTR, C gets 8.5% CTR, D gets 12% CTR and E gets 14% CTR. You want to run your multivariate test till you get 95% confidence in a conclusion. Which of the following is true?
+**Q2.** You currently have an email marketing template A and you want to replace it with a better template. A is the control_template. You also test email templates B, C, D, E. You send exactly 1000 emails of each template to different random users. You wish to figure out what email gets the highest click through rate. Template A gets 10% click through rate (CTR), B gets 7% CTR, C gets 8.5% CTR, D gets 12% CTR and E gets 14% CTR. You want to run your multivariate test till you get 95% confidence in a conclusion. Which of the following is true?
 
     1. We have too little data to conclude that A is better or worse than any other template with 95% confidence.
     2. E is better than A with over 95% confidence, B is worse than A with over 95% confidence. You need to run the test for longer to tell where C and D compare to A with 95% confidence.
@@ -50,7 +50,7 @@ E is better than A with over 95% confidence, B is worse than A with over 95% con
 This means you've determined that Template E is better than A and Template B is worse than A with a high level of confidence. However, to precisely evaluate where Templates C and D stand against Template A with 95% confidence, more data or testing is needed.
 
 
-Q3. You have $m$ training examples and $n$ features. Your feature vectors are however sparse and average number of non-zero entries in each train example is $k$ and $k << n$. What is the approximate computational cost of each gradient descent iteration of logistic regression in modern well written packages?
+**Q3.** You have $m$ training examples and $n$ features. Your feature vectors are however sparse and average number of non-zero entries in each train example is $k$ and $k << n$. What is the approximate computational cost of each gradient descent iteration of logistic regression in modern well written packages?
 
 Answer:
 The computational cost of each gradient descent iteration in logistic regression with sparse features can be estimated based on the number of non-zero entries in the feature vectors.
@@ -67,7 +67,7 @@ Sources:
 * TensorFlow documentation on Logistic Regression: https://www.tensorflow.org/api_docs/python/tf/keras/Sequential
 
 
-Q4. 4. We are interested in building a high quality text classifier that categorizes news stories into 2 categories - information and entertainment. We want the classifier to stick with predicting the better among these two categories (this classifier won't try to predict a percent score for these two categories). You have already trained V1 of a classifier with 10,000 news stories from the New York Times, which is one of 1000 new sources we would like the next version of our classifier (let's call it V2) to correctly categorize stories for. You would like to train a new classifier with the original 10,000 New York Times news stories and an additional 10,000 different news stories and no more. Below are approaches to generating the additional 10,000 pieces of train data for training V2.
+**Q4.** 4. We are interested in building a high quality text classifier that categorizes news stories into 2 categories - information and entertainment. We want the classifier to stick with predicting the better among these two categories (this classifier won't try to predict a percent score for these two categories). You have already trained V1 of a classifier with 10,000 news stories from the New York Times, which is one of 1000 new sources we would like the next version of our classifier (let's call it V2) to correctly categorize stories for. You would like to train a new classifier with the original 10,000 New York Times news stories and an additional 10,000 different news stories and no more. Below are approaches to generating the additional 10,000 pieces of train data for training V2.
 
 a. Run our V1 classifier on 1 Million random stories from the 1000 news sources. Get the 10k stories where the V1 classifier’s output is closest to the decision boundary and get these examples labeled.
 
@@ -109,7 +109,7 @@ Sources used to address this question:
 * Notable approaches in data selection for improving classifiers.
 
 
-Q5. You wish to estimate the probability, $p$ that a coin will come up heads, since it may not be a fair coin. You toss the coin $n$ times and it comes up heads $k$ times. You use the following three methods to estimate $p$
+**Q5.** You wish to estimate the probability, $p$ that a coin will come up heads, since it may not be a fair coin. You toss the coin $n$ times and it comes up heads $k$ times. You use the following three methods to estimate $p$
     1. Maximum Likelihood estimate (MLE)
     2. Bayesian Estimate: Here you assume a continuous distribution uniform prior to $p$ from $[0,1]$ (i.e. the probability density function for the value of $p$ is uniformly $1$ inside this range and $0$ outside. Our estimate for $p$ will be the expected value of the posterior distribution of $p$. The posterior distribution is conditioned on these observations.
     3. Maximum a posteriori (MAP) estimate: Here you assume that the prior is the same as (b). But we are interested in the value of $p$ that corresponds to the mode of the posterior distribution.
